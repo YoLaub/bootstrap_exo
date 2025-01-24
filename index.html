@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="container-fluid">
+  <header class="container-fluid accueil">
 
     <!-- NAVIGATION -->
 
@@ -27,7 +27,7 @@
             <a class="nav-link active" href="#">ACCUEIL</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">INFO</a>
+            <a class="nav-link" href="sejour.html">SEJOURS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">CONTACT</a>
@@ -51,7 +51,7 @@
 
   </header>
 
-  <main class="container">
+  <main class="container colorAccueil">
     <div class="info">
        <!-- BLOCK 1       -->
     <section class="row py-md-1 py-lg-5 col-sm-12 m-lg-0">
@@ -82,6 +82,7 @@
             class="bg-transparent border-success rounded-end-pill rounded-start-pill px-3 mt-4 text-success">En
             savoir plus</button>
       </article>
+      
     </section>
 
 
@@ -127,36 +128,47 @@
 
 
 
-  <footer class="container-fluid bg-black pt-5">
+  <footer class="container-fluid pt-5">
 
     <aside class="text-center text-light py-5 m-auto">
       <h2>Lorem ipsum dolor sit.</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed esse reprehenderit, nobis nihil soluta at!</p>
+      <p class="text-uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed esse reprehenderit, nobis nihil soluta at!</p>
+      <button type="submit" class="btn bg-transparent border-light text-light mb-3">INFORMATIONS</button>
     </aside>
 
     <section class="row formulaire m-auto">
 
       <div class="text-center text-light my-5">
         <h2>RESTONS EN CONTACT</h2>
-      <h4>Lorem, ipsum dolor sit amet consectetur adipisicing.</h4>
+      <h4 class="text-uppercase">Lorem, ipsum dolor sit amet consectetur adipisicing.</h4>
       </div>
       
       <div class="col-6 mb-3">
        
-        <input type="email" class="form-control bg-transparent border-light text-light" id="exampleFormControlInput1" placeholder="name" value="name">
+        <input type="name" class="form-control bg-transparent border-light text-light focus-ring-light" id="exampleFormControlInput1" placeholder="name" >
       </div>
       <div class=" col-6">
         
-        <input type="email" class="form-control bg-transparent border-light text-light" id="exampleFormControlInput1" placeholder="email" value="email">
+        <input type="email" class="form-control bg-transparent border-light text-light  focus-ring-light focus" id="exampleFormControlInput2" placeholder="email" >
       </div>
       <div class="col-12 mb-3">
-        <textarea class="form-control bg-transparent border-light text-light" id="exampleFormControlTextarea1" rows="3" placeholder="message" ></textarea>
+        <textarea class="form-control bg-transparent border-light text-light" id="exampleFormControlTextarea1" rows="3" placeholder="message"  ></textarea>
       </div>
       <div class="col-auto m-auto">
         <button type="submit" class="btn bg-transparent border-light text-light mb-3">ENVOYER</button>
         <button type="submit" class="btn btn-primary bg-transparent border-light text-light mb-3">ANNULER</button>
       </div>
     </section>
+    <section>
+      <div class="row text-center m-auto fs-3 reseau text-light mt-5">
+        <i class="col-3 bi bi-facebook"></i>
+        <i class="col-3 bi bi-twitter-x"></i>
+        <i class="col-3 bi bi-instagram"></i>
+        <i class="col-3 bi bi-linkedin"></i>
+      </div>
+      <p class="text-center m-auto fs-5 text-light py-2">&copy; Greta Vannes - Session Kercode 2024-2025 - Yoann Laubert</p>
+    </section>
+   
 
   </footer>
 

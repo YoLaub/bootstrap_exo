@@ -1,39 +1,136 @@
-header{
+/* raleway-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway-v34-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+    font-family: 'Raleway';
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+}
+
+.accueil {
     background-image: url(/images/banner.jpg);
     background-size: cover;
     min-height: 400px;
 }
 
-#gem{
+#gem {
     width: 75px;
     height: 75px;
     padding: 8px;
 }
 
-main{
+.colorAccueil {
     background-color: #eee;
 }
 
-.articleInfo{
+.articleInfo {
     height: auto;
 }
 
-
-.photoGallerie{
+.photoGallerie {
     width: 700px;
 }
 
-.info{
+.info {
     max-width: 1000px;
     margin: auto;
 }
 
-aside{
-    width: 500px;
+footer {
+    background-color: #1e2832;
 }
 
-.formulaire{
-
-    width: 500px;
-
+aside {
+    max-width: 500px;
 }
+
+.formulaire {
+    width: 800px;
+}
+
+.form-control::placeholder {
+    color: white;
+    opacity: 0.9;
+}
+
+.form-control:focus {
+    background: #8a949c !important;
+    outline: none!important;
+    box-shadow: none;
+    border: 2px solid #363d43;
+}
+
+.form-control{
+    background: rgb(83, 89, 96)!important;
+    outline: none!important;
+    box-shadow: none;
+    border: none;
+}
+
+.reseau {
+    max-width: 200px;
+}
+
+.btn-card{
+    background-color: #1e2832;
+}
+.btn-card:hover{
+    background-color: #364452;
+}
+
+.carousel-control-prev{
+    left: -150px;
+}
+.carousel-control-next{
+    right: -150px;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+

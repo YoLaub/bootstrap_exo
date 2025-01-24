@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RETROSPECT</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="script/carousel.js" defer></script>
+</head>
+
+<body>
+  <header class="container-fluid bg-black">
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar navbar-dark justify-content-between text-end">
+      <h2 class="text-light">RETROSPECT</h2>
+      <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#monMenu">
+        <i class="bi bi-list"> Menu</i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center me-4" id="monMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">ACCUEIL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sejour.html">SEJOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    </header>
+
+    <main class="container-xl">
+
+        <!-- FIL D'ARIANE -->
+          <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Séjours</li>
+            </ol>
+          </nav>
+
+          <section class="text-center m-auto mx-5 px-5 mb-5">
+            <h1>Séjours</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam.</p>
+            <img class="img-fluid d-lg-block d-none d-sm-none " src="images/pic11.jpg" alt="Séjours">
+          </section>
+
+          <section class="row">
+            <h3 class="col-12">Dernières destinations</h3>
+             <article class="row g-0 m-auto">
+                <div class="card col-12 col-sm-12 col-md-6 col-lg-3 my-4 mx-auto" style="width: 18rem;">
+                    <img src="images/pic05.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-card text-light">Go somewhere</a>
+                    </div>
+                  </div>
+                <div class="card col-12 col-sm-12 col-md-6 col-lg-3  my-4 mx-auto" style="width: 18rem;">
+                    <img src="images/pic08.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-card text-light">Go somewhere</a>
+                    </div>
+                  </div>
+                <div class="card col-12 col-sm-12 col-md-6 col-lg-3 my-4 mx-auto" style="width: 18rem;">
+                    <img src="images/pic09.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-card text-light">Go somewhere</a>
+                    </div>
+                  </div>
+                <div class="card col-12 col-sm-12 col-md-6 col-lg-3 my-4 mx-auto" style="width: 18rem;">
+                    <img src="images/pic10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-card text-light">Go somewhere</a>
+                    </div>
+                  </div>
+             </article>
+          </section>
+
+
+          <!-- INFORMATIONS SEJOURS -->
+          <section class="row m-5">
+
+            <!-- ACCORDIONS -->
+            <article class="col-sm-12 col-lg-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </article>
+            
+             <!-- TABLE -->
+            <article class="col-sm-12 col-lg-6 mt-lg-0 mt-5 ms-lg-0 ms-0 d-none d-lg-block">
+                <h3 class="mb-5">Top 3 de nos voyageurs</h3>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </article>
+
+
+          </section>
+          
+    </main>
+
+
+  <!-- FOOTER AVEC FORMULAIRE -->
+
+
+
+  <footer class="container-fluid pt-5">
+
+    <aside class="text-center text-light py-5 m-auto">
+      <h2>Lorem ipsum dolor sit.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed esse reprehenderit, nobis nihil soluta at!</p>
+      <button type="submit" class="btn bg-transparent border-light text-light mb-3">INFORMATIONS</button>
+    </aside>
+
+    <!-- PARTENAIRE -->
+    <figure>
+        <div class="container text-center my-3">
+            <h2 class="font-weight-light text-light">Nos Partenaires</h2>
+            <div class="row mx-auto mt-5 mb-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active mx-2">
+                            <div class="col-md-3">
+                                <div class="card mx-2">
+                                    <div class="card-img">
+                                        <img src="images/LOGO/logo1.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card mx-2">
+                                    <div class="card-img">
+                                        <img src="images/LOGO/logo2.png" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card mx-2">
+                                    <div class="card-img">
+                                        <img src="images/LOGO/logo3.jpg" class="img-fluid">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card mx-2">
+                                    <div class="card-img">
+                                        <img src="images/LOGO/logo4.png" class="img-fluid">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card mx-2">
+                                    <div class="card-img">
+                                        <img src="images/LOGO/logo5.jpg" class="img-fluid">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card ">
+                                    <div class="card-img">
+                                        <img src="images/LOGO/logo6.png" class="img-fluid">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev bg-transparent w-aut " href="#recipeCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+
+                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </figure>
+
+    <section>
+      <div class="row text-center m-auto fs-3 reseau text-light mt-5">
+        <i class="col-3 bi bi-facebook"></i>
+        <i class="col-3 bi bi-twitter-x"></i>
+        <i class="col-3 bi bi-instagram"></i>
+        <i class="col-3 bi bi-linkedin"></i>
+      </div>
+      <p class="text-center m-auto fs-5 text-light py-2">&copy; Greta Vannes - Session Kercode 2024-2025 - Yoann Laubert</p>
+    </section>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
